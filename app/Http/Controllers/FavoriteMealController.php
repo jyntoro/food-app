@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Meal;
+use Illuminate\Support\Facades\Auth;
 
 class FavoriteMealController extends Controller
 {
@@ -13,6 +14,9 @@ class FavoriteMealController extends Controller
             'meals' => Meal::join('meal_types', 'meal_types.id', '=', 'meals.meal_type_id')
             ->join('users', 'users.id', '=', 'meals.user_id')
             ->with(['meal_type', 'user'])
+            ->when(!Auth::user()->isAdmin(), function($query) {
+                return $query->where('users.email', '=', Auth::user()->email);
+            })
             ->where('is_favorite', '=', 'true')
             ->orderBy('meals.favorited_at', 'desc')
             ->select('*', 'meals.id as id', 'meals.name as name')

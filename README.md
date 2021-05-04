@@ -1,5 +1,6 @@
-- [Go visit my Heroku app] (http://oentoro-food-app.herokuapp.com/about)
-- [For a video walkthrough go to:] (https://usc.zoom.us/rec/share/oMz2qNpEO8iRLfkhdIF83OX9otyFh-GcQ0YamfkbQBb567Z730S4r9qapqDQyQWa.jcmBQnhUo_eNXatM)
+- [Go visit my Heroku app](http://oentoro-food-app.herokuapp.com/about)
+- [Video walkthrough](https://usc.zoom.us/rec/share/oMz2qNpEO8iRLfkhdIF83OX9otyFh-GcQ0YamfkbQBb567Z730S4r9qapqDQyQWa.jcmBQnhUo_eNXatM)
+- ![Schema](schema.jpg)
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
